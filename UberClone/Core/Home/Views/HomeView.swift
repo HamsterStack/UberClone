@@ -13,6 +13,9 @@ struct HomeView: View {
     
     @State private var mapState = MapViewState.noInput
     @EnvironmentObject var locationViewModel: LocationSearchViewModel
+    @EnvironmentObject var launchScreenManager : LaunchScreenManager
+    
+    @State var showMenu = false
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -31,9 +34,10 @@ struct HomeView: View {
                         }
                 }
                 
-                MapViewActionButton(mapState: $mapState)
+                MapViewActionButton(mapState: $mapState, showMenu: $showMenu)
                     .padding(.leading)
                     .padding(.top, 4)
+                
             }
             
             if mapState == .locationSelected || mapState == .polylineAdded{
@@ -41,12 +45,17 @@ struct HomeView: View {
                     .transition(.move(edge: .bottom))
             }
         }
+        .sheet(isPresented: $showMenu){
+            SettingsView(settingsOn: $showMenu)
+                
+        }
         .edgesIgnoringSafeArea(.bottom)
         .onReceive(LocationManager.shared.$userLocation) { location in
             if let location = location {
                 locationViewModel.userLocation = location
             }
         }
+        
         
         
     }

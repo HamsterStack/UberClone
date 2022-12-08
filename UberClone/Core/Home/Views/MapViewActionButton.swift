@@ -11,10 +11,19 @@ struct MapViewActionButton: View {
     @Binding var mapState: MapViewState
     @EnvironmentObject var viewModel : LocationSearchViewModel
     
+    @Binding var showMenu: Bool
+    
     var body: some View {
         Button {
             withAnimation(.spring()) {
                 actionForState(mapState)
+                if mapState == .noInput{
+                    print(mapState)
+                    withAnimation(.spring()){
+                        showMenu.toggle()
+                        print("pressed")
+                    }
+                }
             }
             
         } label: {
@@ -32,7 +41,7 @@ struct MapViewActionButton: View {
     func actionForState(_ state: MapViewState) {
         switch state {
         case .noInput:
-            print("no input")
+            break
         case .searchingForLocation:
             mapState = .noInput
         case .locationSelected, .polylineAdded:
@@ -56,6 +65,6 @@ struct MapViewActionButton: View {
 
 struct MapViewActionButton_Previews: PreviewProvider {
     static var previews: some View {
-        MapViewActionButton(mapState: .constant(.noInput))
+        MapViewActionButton(mapState: .constant(.noInput), showMenu: .constant(false))
     }
 }

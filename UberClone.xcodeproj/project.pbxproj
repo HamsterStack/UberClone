@@ -10,6 +10,13 @@
 		813315C6293BE9A3008B9D0E /* UberCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813315C5293BE9A3008B9D0E /* UberCloneApp.swift */; };
 		813315CA293BE9A4008B9D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813315C9293BE9A4008B9D0E /* Assets.xcassets */; };
 		813315CD293BE9A4008B9D0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813315CC293BE9A4008B9D0E /* Preview Assets.xcassets */; };
+		813E9BEA293FE3A6006BE71E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 813E9BE9293FE3A6006BE71E /* GoogleService-Info.plist */; };
+		813E9BED293FE5F1006BE71E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 813E9BEC293FE5F1006BE71E /* FirebaseAuth */; };
+		813E9BEF293FE5F1006BE71E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 813E9BEE293FE5F1006BE71E /* FirebaseFirestore */; };
+		813E9BF3293FEB2C006BE71E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813E9BF2293FEB2C006BE71E /* View.swift */; };
+		81401A79293E8FFD00ECBBDD /* LaunchScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81401A78293E8FFD00ECBBDD /* LaunchScreenManager.swift */; };
+		8151A867293FFB2C004645B9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151A866293FFB2C004645B9 /* AuthViewModel.swift */; };
+		8151A86C29403FFC004645B9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151A86B29403FFC004645B9 /* SettingsView.swift */; };
 		815D05C2293C165C0066D489 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815D05C1293C165C0066D489 /* HomeView.swift */; };
 		815D05C4293C16B00066D489 /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815D05C3293C16B00066D489 /* UberMapViewRepresentable.swift */; };
 		815D05C6293C37A80066D489 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815D05C5293C37A80066D489 /* LocationManager.swift */; };
@@ -24,6 +31,7 @@
 		81DB3EA3293E49AA00E3044F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB3EA2293E49AA00E3044F /* Double.swift */; };
 		81DB3EA5293E4CA100E3044F /* UberLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB3EA4293E4CA100E3044F /* UberLocation.swift */; };
 		81DB3EA7293E50FA00E3044F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB3EA6293E50FA00E3044F /* Color.swift */; };
+		81DB3EAD293E8C5B00E3044F /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB3EAC293E8C5B00E3044F /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +39,12 @@
 		813315C5293BE9A3008B9D0E /* UberCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneApp.swift; sourceTree = "<group>"; };
 		813315C9293BE9A4008B9D0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		813315CC293BE9A4008B9D0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		813E9BE9293FE3A6006BE71E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		813E9BF2293FEB2C006BE71E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		81401A78293E8FFD00ECBBDD /* LaunchScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenManager.swift; sourceTree = "<group>"; };
+		8151A866293FFB2C004645B9 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		8151A86A29401928004645B9 /* UberClone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UberClone.entitlements; sourceTree = "<group>"; };
+		8151A86B29403FFC004645B9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		815D05C1293C165C0066D489 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		815D05C3293C16B00066D489 /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
 		815D05C5293C37A80066D489 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -45,6 +59,8 @@
 		81DB3EA2293E49AA00E3044F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		81DB3EA4293E4CA100E3044F /* UberLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberLocation.swift; sourceTree = "<group>"; };
 		81DB3EA6293E50FA00E3044F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		81DB3EA8293E8B4900E3044F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		81DB3EAC293E8C5B00E3044F /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813E9BED293FE5F1006BE71E /* FirebaseAuth in Frameworks */,
+				813E9BEF293FE5F1006BE71E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,12 +95,16 @@
 		813315C4293BE9A3008B9D0E /* UberClone */ = {
 			isa = PBXGroup;
 			children = (
+				8151A86A29401928004645B9 /* UberClone.entitlements */,
+				813E9BF4293FFAD4006BE71E /* Auth */,
+				81DB3EA8293E8B4900E3044F /* Info.plist */,
 				815D05BE293C16100066D489 /* App */,
 				815D05BD293C160F0066D489 /* Core */,
 				815D05BC293C160E0066D489 /* Extensions */,
 				815D05BA293C16060066D489 /* Managers */,
 				815D05B6293C15EE0066D489 /* Models */,
 				813315C9293BE9A4008B9D0E /* Assets.xcassets */,
+				813E9BE9293FE3A6006BE71E /* GoogleService-Info.plist */,
 				813315CB293BE9A4008B9D0E /* Preview Content */,
 			);
 			path = UberClone;
@@ -94,6 +116,14 @@
 				813315CC293BE9A4008B9D0E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		813E9BF4293FFAD4006BE71E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8151A866293FFB2C004645B9 /* AuthViewModel.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		815D05B6293C15EE0066D489 /* Models */ = {
@@ -110,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				815D05C5293C37A80066D489 /* LocationManager.swift */,
+				81401A78293E8FFD00ECBBDD /* LaunchScreenManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -119,6 +150,7 @@
 			children = (
 				81DB3EA2293E49AA00E3044F /* Double.swift */,
 				81DB3EA6293E50FA00E3044F /* Color.swift */,
+				813E9BF2293FEB2C006BE71E /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -126,6 +158,7 @@
 		815D05BD293C160F0066D489 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				81DB3EAA293E8C4400E3044F /* LaunchScreen */,
 				81DB3E9D293D914E00E3044F /* Trips */,
 				815D05C8293C43C00066D489 /* LocationSearch */,
 				815D05C7293C43B70066D489 /* Home */,
@@ -202,6 +235,23 @@
 			path = Trips;
 			sourceTree = "<group>";
 		};
+		81DB3EAA293E8C4400E3044F /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				81DB3EAB293E8C5200E3044F /* Views */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		81DB3EAB293E8C5200E3044F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81DB3EAC293E8C5B00E3044F /* LaunchScreen.swift */,
+				8151A86B29403FFC004645B9 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,6 +268,10 @@
 			dependencies = (
 			);
 			name = UberClone;
+			packageProductDependencies = (
+				813E9BEC293FE5F1006BE71E /* FirebaseAuth */,
+				813E9BEE293FE5F1006BE71E /* FirebaseFirestore */,
+			);
 			productName = UberClone;
 			productReference = 813315C2293BE9A3008B9D0E /* UberClone.app */;
 			productType = "com.apple.product-type.application";
@@ -246,6 +300,9 @@
 				Base,
 			);
 			mainGroup = 813315B9293BE9A3008B9D0E;
+			packageReferences = (
+				813E9BEB293FE5F1006BE71E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 813315C3293BE9A3008B9D0E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,6 +319,7 @@
 			files = (
 				813315CD293BE9A4008B9D0E /* Preview Assets.xcassets in Resources */,
 				813315CA293BE9A4008B9D0E /* Assets.xcassets in Resources */,
+				813E9BEA293FE3A6006BE71E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,13 +335,18 @@
 				815D05C6293C37A80066D489 /* LocationManager.swift in Sources */,
 				81DB3E9F293D915A00E3044F /* RideRequestView.swift in Sources */,
 				81DB3EA3293E49AA00E3044F /* Double.swift in Sources */,
+				8151A86C29403FFC004645B9 /* SettingsView.swift in Sources */,
 				81B53683293C9559008A0682 /* MapViewState.swift in Sources */,
+				8151A867293FFB2C004645B9 /* AuthViewModel.swift in Sources */,
 				815D05CE293C44D20066D489 /* MapViewActionButton.swift in Sources */,
 				813315C6293BE9A3008B9D0E /* UberCloneApp.swift in Sources */,
+				81DB3EAD293E8C5B00E3044F /* LaunchScreen.swift in Sources */,
 				81DB3EA7293E50FA00E3044F /* Color.swift in Sources */,
 				815D05C4293C16B00066D489 /* UberMapViewRepresentable.swift in Sources */,
 				815D05C2293C165C0066D489 /* HomeView.swift in Sources */,
+				81401A79293E8FFD00ECBBDD /* LaunchScreenManager.swift in Sources */,
 				81DB3EA5293E4CA100E3044F /* UberLocation.swift in Sources */,
+				813E9BF3293FEB2C006BE71E /* View.swift in Sources */,
 				815D05CC293C43DF0066D489 /* LocationSearchActivationView.swift in Sources */,
 				815D05D2293C491C0066D489 /* LocationSearchResultCell.swift in Sources */,
 				81DB3EA1293E338100E3044F /* RideType.swift in Sources */,
@@ -412,16 +475,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UberClone/UberClone.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UberClone/Preview Content\"";
 				DEVELOPMENT_TEAM = W263X7CLZB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UberClone/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -431,6 +496,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tommiller.UberClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,16 +508,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UberClone/UberClone.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UberClone/Preview Content\"";
 				DEVELOPMENT_TEAM = W263X7CLZB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UberClone/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,6 +529,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tommiller.UberClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,6 +558,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		813E9BEB293FE5F1006BE71E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		813E9BEC293FE5F1006BE71E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 813E9BEB293FE5F1006BE71E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		813E9BEE293FE5F1006BE71E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 813E9BEB293FE5F1006BE71E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 813315BA293BE9A3008B9D0E /* Project object */;
 }
